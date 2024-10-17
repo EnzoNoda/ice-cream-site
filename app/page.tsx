@@ -1,16 +1,8 @@
 import Image from 'next/image'
 import HeaderGlobal from './components/Header'
-import Carousel from './components/Carousel.js'
+import { SwiperComponent } from './components/Swiper'
 
 export default function Home() {
-    const slides = [
-        { img: '/balls1.png', flavor: 'Morango' },
-        { img: '/balls2.png', flavor: 'Chocolate' },
-        { img: '/balls3.png', flavor: 'Mirtilo' },
-        { img: '/balls4.png', flavor: 'Baunilha' },
-        { img: '/balls5.png', flavor: 'Pistache' }
-    ]
-
     return (
         <main className="bg-primary-200 h-screen overflow-auto">
             <HeaderGlobal />
@@ -88,7 +80,7 @@ export default function Home() {
                 <h2 className="text-2xl font-fredoka text-center text-primary-400">
                     From strawberry to coconut, we have them all!
                 </h2>
-                <Carousel slides={slides} />
+                <SwiperComponent />
             </div>
         </main>
     )

@@ -1,0 +1,11 @@
+{
+  "slides":[
+
+    { "img": "/balls1.png", "flavor": "Morango" },
+    { "img": "/balls2.png", "flavor": "Chocolate" },
+    { "img": "/balls3.png", "flavor": "Mirtilo" },
+    { "img": "/balls4.png", "flavor": "Baunilha" },
+    { "img": "/balls5.png", "flavor": "Pistache" }
+  ]
+  
+}
