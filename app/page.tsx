@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import HeaderGlobal from './components/Header'
 import { SwiperComponent } from './components/Swiper'
+import { TabsComponent } from './components/Tabs'
 
 export default function Home() {
     return (
@@ -81,6 +82,64 @@ export default function Home() {
                     From strawberry to coconut, we have them all!
                 </h2>
                 <SwiperComponent />
+            </div>
+            <div className="relative justify-center flex flex-col lg:flex-row object-center items-center mt-10">
+                <div className=" relative h-[350px] w-[150px] sm:h-[450px] sm:w-[200px] md:h-[600px] md:w-[250px] z-10 rotate-[35deg] mr-14 sm:mr-32">
+                    <Image
+                        src="/cone.png"
+                        alt="cone"
+                        fill
+                        className="object-cover "
+                    />
+                </div>
+
+                <div className="flex flex-col">
+                    <h2 className="ml-5 font-bold mb-3 text-base font-fredoka text-primary-400">
+                        Ingredients
+                    </h2>
+                    <h2 className="ml-5 font-bold text-4xl font-fredoka text-primary-400">
+                        100% Organic and Natural
+                    </h2>
+                    <h2 className="ml-5 mb-5 mt-5 text-lg font-fredoka text-primary-400 opacity-85">
+                        We use only natural ingredients in our ice cream and
+                        desserts.
+                    </h2>
+
+                    <ul className="list-none pl-5">
+                        <li className="-ml-2 mb-2 mt-2 font-bold text-lg font-fredoka text-primary-400">
+                            🍦 Farm milk from local households;
+                        </li>
+                        <li className="-ml-2 mb-2 mt-2 font-bold text-lg font-fredoka text-primary-400">
+                            🍦 Berry and fruit pieces and whole fruit;
+                        </li>
+                        <li className="-ml-2 mb-2 mt-2 font-bold text-lg font-fredoka text-primary-400">
+                            🍦 No chemical flavors or sweeteners.
+                        </li>
+                    </ul>
+
+                    <h2 className="ml-5 mb-20 mt-5 text-lg font-fredoka text-primary-400 max-w-md">
+                        The recipe for good ice cream is simple: milk, cream,
+                        and fruit. And, of course, lots of love! We use
+                        traditional recipes and state-of-the-art technology to
+                        handcraft the most delicious ice cream in New York!
+                    </h2>
+                </div>
+            </div>
+
+            <div className="flex items-start justify-center h-screen">
+                <div className="text-center">
+                    <p className="ml-5 mb-3 mt-2 text-base font-fredoka text-primary-400">
+                        Our menu
+                    </p>
+                    <p className="ml-5 mb-5 mt-2 text-4xl font-fredoka text-primary-400">
+                        Featured Desserts & Treats
+                    </p>
+                    <p className="ml-5 mb-10 mt-2 text-lg font-fredoka text-primary-400">
+                        Welcome to the sweet tooth paradise!
+                    </p>
+
+                    <TabsComponent />
+                </div>
             </div>
         </main>
     )
