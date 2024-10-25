@@ -8,8 +8,8 @@ const HeaderGlobal = () => {
     const [openMenu, setOpenMenu] = useState<boolean>(false)
     return (
         <>
-            <header className="fixed flex bg-primary-200 justify-between items-center flex-row w-screen z-40 h-20 ">
-                <Link href="/">
+            <header className="fixed flex bg-primary-200 justify-between items-center flex-row w-screen z-40 h-20 border-b-primary-400 border-[1px]">
+                <Link href="/#section1">
                     <Image
                         src="/icon.png"
                         alt="icon"
@@ -35,6 +35,14 @@ const HeaderGlobal = () => {
                     <ul className="flex justify-center items-center text-primary-400 gap-10  text-3xl">
                         <li>
                             <Link
+                                href="/#section1"
+                                className="font-fredoka transition ease-in-out delay-50 hover:text-primary-300 hover:bg-white rounded-md p-2"
+                            >
+                                Home
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
                                 href="/about"
                                 className="font-fredoka transition ease-in-out delay-50 hover:text-primary-300 hover:bg-white rounded-md p-2"
                             >
@@ -43,7 +51,7 @@ const HeaderGlobal = () => {
                         </li>
                         <li>
                             <Link
-                                href="/menu"
+                                href="/#menu"
                                 className="font-fredoka transition ease-in-out delay-50 hover:text-primary-300 hover:bg-white rounded-md p-2"
                             >
                                 Menu
@@ -63,6 +71,9 @@ const HeaderGlobal = () => {
             {openMenu && (
                 <div className="absolute inset-0 bg-primary-200  flex flex-col items-center justify-center z-30">
                     <nav className="flex flex-col space-y-6 text-primary-400 text-3xl">
+                        <Link className="font-fredoka " href="/#section1">
+                            Home
+                        </Link>
                         <Link className="font-fredoka " href="/about">
                             Sobre Nós
                         </Link>

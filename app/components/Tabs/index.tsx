@@ -9,10 +9,10 @@ export const TabsComponent = () => {
         <>
             <button
                 onClick={() => setActiveTab(1)}
-                className={`px-5 py-2 ${
+                className={`px-5 py-2 font-fredoka ${
                     activeTab === 1
-                        ? 'text-blue-500 border-b-2 border-blue-500 font-bold'
-                        : 'text-gray-500 hover:text-blue-500'
+                        ? 'text-primary-400 border-b-2 border-primary-400 font-fredoka font-bold'
+                        : 'text-gray-400 hover:text-primary-400'
                 } focus:outline-none`}
             >
                 Desserts
@@ -20,10 +20,10 @@ export const TabsComponent = () => {
 
             <button
                 onClick={() => setActiveTab(2)}
-                className={`px-5 py-2 ${
+                className={`px-5 py-2 font-fredoka ${
                     activeTab === 2
-                        ? 'text-blue-500 border-b-2 border-blue-500 font-bold'
-                        : 'text-gray-500 hover:text-blue-500'
+                        ? 'text-primary-400 border-b-2 border-primary-400 font-fredoka font-bold'
+                        : 'text-gray-400 hover:text-primary-400'
                 } focus:outline-none`}
             >
                 Ice Cream
@@ -31,10 +31,10 @@ export const TabsComponent = () => {
 
             <button
                 onClick={() => setActiveTab(3)}
-                className={`px-5 py-2 ${
+                className={`px-5 py-2 font-fredoka ${
                     activeTab === 3
-                        ? 'text-blue-500 border-b-2 border-blue-500 font-bold'
-                        : 'text-gray-500 hover:text-blue-500'
+                        ? 'text-primary-400 border-b-2 border-primary-400 font-fredoka font-bold'
+                        : 'text-gray-400 hover:text-primary-400'
                 } focus:outline-none`}
             >
                 Drinks

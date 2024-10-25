@@ -5,9 +5,12 @@ import { TabsComponent } from './components/Tabs'
 
 export default function Home() {
     return (
-        <main className="bg-primary-200 h-screen overflow-auto">
+        <main className="bg-primary-200 h-screen overflow-auto scroll-smooth">
             <HeaderGlobal />
-            <div className="container mx-auto p-4  z-10 pt-60 sm:pt-36 ">
+            <div
+                id="section1"
+                className="container mx-auto p-4  z-10 pt-60 sm:pt-36 "
+            >
                 <div className="relative flex justify-end mt-10">
                     <div className="flex absolute flex-col text-white  top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2 w-44  justify-center items-center z-20">
                         <h5 className="text-lg sm:text-3xl font-fredoka">
@@ -126,7 +129,10 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="flex items-start justify-center h-screen">
+            <div
+                id="menu"
+                className="flex items-start justify-center h-screen p-32"
+            >
                 <div className="text-center">
                     <p className="ml-5 mb-3 mt-2 text-base font-fredoka text-primary-400">
                         Our menu
