@@ -1,8 +1,9 @@
+import Image from 'next/image'
 import HeaderGlobal from '../components/Header'
 
 const Sobre = () => {
     return (
-        <main className="bg-primary-200 h-screen overflow-auto ">
+        <main className="bg-primary-200 h-screen overflow-auto pb-20">
             <HeaderGlobal />
             <div className="flex flex-col justify-center items-center">
                 <section className="flex justify-center items-center mt-32 h-40">
@@ -40,7 +41,15 @@ const Sobre = () => {
                     </div>
                 </section>
                 <section className="flex flex-col sm:flex-row justify-center items-start mt-20 h-auto gap-5 sm:gap-10 mx-20 max-w-[900px]">
-                    <div className="flex flex-col justify-center items-center w-80">
+                    <div className="flex flex-col justify-center items-start w-80">
+                        <div className="flex justify-center items-center p-3 bg-primary-400 rounded-full mb-4">
+                            <Image
+                                src="/avental.svg"
+                                width={35}
+                                height={35}
+                                alt="avental"
+                            />
+                        </div>
                         <p className="text-[20px] font-bold font-fredoka text-primary-400 text-justify">
                             Delicious Ice Cream
                         </p>
@@ -49,7 +58,15 @@ const Sobre = () => {
                             ingredients.
                         </p>
                     </div>
-                    <div className="flex flex-col justify-center items-center w-80">
+                    <div className="flex flex-col justify-center items-start w-80">
+                        <div className="flex justify-center items-center p-3 bg-primary-400 rounded-full mb-4">
+                            <Image
+                                src="/mesa.svg"
+                                width={35}
+                                height={35}
+                                alt="mesa"
+                            />
+                        </div>
                         <p className="text-[20px] font-bold font-fredoka text-primary-400 text-justify">
                             Cozy Atmosphere
                         </p>
@@ -58,7 +75,15 @@ const Sobre = () => {
                             familly.
                         </p>
                     </div>
-                    <div className="flex flex-col justify-center items-center w-80">
+                    <div className="flex flex-col justify-center items-start w-80">
+                        <div className="flex justify-center items-center p-3 bg-primary-400 rounded-full mb-4">
+                            <Image
+                                src="/caixa.svg"
+                                width={35}
+                                height={35}
+                                alt="caixa"
+                            />
+                        </div>
                         <p className="text-[20px] font-bold font-fredoka text-primary-400 text-justify">
                             Table Reservation
                         </p>
@@ -66,7 +91,15 @@ const Sobre = () => {
                             Make sure you ve booked a table on this website.
                         </p>
                     </div>
-                    <div className="flex flex-col justify-center items-center w-80">
+                    <div className="flex flex-col justify-center items-start w-80">
+                        <div className="flex justify-center items-center p-3 bg-primary-400 rounded-full mb-4">
+                            <Image
+                                src="/bananaSplit.svg"
+                                width={35}
+                                height={35}
+                                alt="bananaSplit"
+                            />
+                        </div>
                         <p className="text-[20px] font-bold font-fredoka text-primary-400 text-justify">
                             Top Desserts
                         </p>

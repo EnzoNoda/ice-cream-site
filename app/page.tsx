@@ -42,7 +42,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="h-[60%] flex justify-center items-center flex-col sm:flex-row sm: px-10 bg-primary-200 mt-80 gap-10">
+            <div className="h-[60%] flex justify-center items-center flex-col sm:flex-row sm: px-16 bg-primary-200 mt-80 gap-10">
                 <div className="flex relative items-center h-44 sm:h-96 bg-red-400 w-10/12 sm:w-3/4 rounded-xl">
                     <h2 className="absolute z-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-fredoka text-2xl bg-primary-300 rounded-md p-2">
                         Milkshakes
@@ -131,7 +131,7 @@ export default function Home() {
 
             <div
                 id="menu"
-                className="flex items-start justify-center h-screen p-32"
+                className="flex items-start justify-center h-screen pt-10"
             >
                 <div className="text-center">
                     <p className="ml-5 mb-3 mt-2 text-base font-fredoka text-primary-400">

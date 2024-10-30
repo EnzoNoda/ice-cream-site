@@ -8,13 +8,14 @@ const HeaderGlobal = () => {
     const [openMenu, setOpenMenu] = useState<boolean>(false)
     return (
         <>
-            <header className="fixed flex bg-primary-200 justify-between items-center flex-row w-screen z-40 h-20 border-b-primary-400 border-[1px]">
+            <header className="px-10 fixed flex bg-primary-200 justify-between items-center flex-row w-screen z-40 h-20 border-b-primary-400 border-[1px]">
                 <Link href="/#section1">
                     <Image
-                        src="/icon.png"
+                        src="/iconCone.png"
                         alt="icon"
-                        width={100}
-                        height={100}
+                        width={60}
+                        height={60}
+                        className="rotate-[20deg]"
                     />
                 </Link>
                 <button
